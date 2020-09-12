@@ -5,14 +5,14 @@
     margin: 0; 
     border: none; 
     outline: none; 
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     display: grid;
     grid-template-columns: 1fr auto 1fr; 
     justify-items: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif; 
+    align-items: center; 
 }
 
 .login-container { 
@@ -127,8 +127,6 @@ body {
     }
     
     .input__links p {
-        font-size: 8px; 
-        margin-left: 50px; 
         margin-bottom: 4px; 
     }
 
