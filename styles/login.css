@@ -32,13 +32,6 @@ body {
     margin-top: 25%;  
 }
 
-@media only screen and (max-width:600px) {
-    .login-box {
-        margin-top:5%; 
-    }
-}
-
-
 .login-box h1 { 
     color: #199fec; 
     font-size: 30px; 
@@ -55,6 +48,7 @@ body {
 }
 
 .icon { 
+    min-height: 40px; 
     min-width: 40px; 
     text-align: center; 
     background-color: #199fec; 
@@ -63,7 +57,7 @@ body {
 
 .input-field {
     width: 100%;
-    margin: 0 5px;  
+    margin: 0 5px; 
 }
 
 .input__links {
@@ -99,4 +93,49 @@ body {
 
 #login-button:focus { 
     border: 3px solid #013d5f; 
+}
+
+@media only screen and (max-width:600px) {
+    .login-box {
+        margin-top:5%; 
+        border-width: 1px; 
+    }
+
+    .login-box h1 {
+        font-size: 18px;
+        margin-top: 15px; 
+        margin-bottom: 15px; 
+    }
+
+    .input-container {
+        display: flex; 
+        width: 300px; 
+        border: 2px solid #199fec;
+        border-radius: 2px; 
+        margin-bottom: 0px; 
+
+    }
+    
+    .icon { 
+        min-height: 30px; 
+        min-width: 30px; 
+        padding: 5px; 
+    }
+
+    .input-field {
+        font-size: 10px; 
+    }
+    
+    .input__links p {
+        font-size: 8px; 
+        margin-left: 50px; 
+        margin-bottom: 4px; 
+    }
+
+    #login-button {
+        height: 25px; 
+        width: 75px; 
+        font-size: 12px; 
+        margin-bottom: 30px; 
+    }
 }
